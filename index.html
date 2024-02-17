@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dom</title>
+  `
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="container m-auto">
+      <div class=" h-24 flex flex-col-reverse justify-center p-5 relative">
+        <img class="w-16 " src="images/cart.png" alt="">
+        <h2 id="cart-count" class="text-3xl font-bold text-green-700  absolute left-10 bottom-16 ">0</h2>
+      </div>
+    </nav>
+    <!-- banner section -->
+    <section class="flex gap-5 container m-auto mb-20">
+      <div class="">
+        <h1 class="text-4xl font-bold">Lets Travel</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nam fugit magni saepe sequi facilis
+          praesentium autem, amet dolor minus?</p>
+        <h3 class="text-2xl font-bold">Total Budget: <span id="total-budget" class="text-blue-700  border border-red-500 rounded-full p-1">900</span> $
+        </h3>
+      </div>
+      <div class="">
+        <img src="images/banner.png" alt="">
+      </div>
+    </section>
+  </header>
+  <main class="container mb-24">
+     <!-- place section -->
+     <div class=" flex gap-6">
+      <!-- place name and const -->
+      <div>
+        <!-- card one -->
+        <div class="flex gap-4 p-5 shadow-md hover:shadow-lime-100 hover:shadow-lg">
+          <div class="w-36">
+            <img class="h-full rounded-lg " src="images/shajek.jpg" alt="">
+          </div>
+          <div class="gap-2">
+            <h4 class="text-2xl font-bold">Shajek</h4>
+            <p class="mb-7">Cost: <span>300</span> $</p>
+            <button id="button" class="add-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card two -->
+        <div class="flex gap-4 p-5 shadow-md hover:shadow-lime-100 hover:shadow-lg">
+          <div class="w-36">
+            <img class="h-full rounded-lg " src="images/Dhaka.jpg" alt="">
+          </div>
+          <div class="gap-2">
+            <h4 class="text-2xl font-bold">Dhaka</h4>
+            <p class="mb-7">Cost: <span>300</span> $</p>
+            <button class="add-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card three -->
+        <div class="flex gap-4 p-5 shadow-md hover:shadow-lime-100 hover:shadow-lg">
+          <div class="w-36">
+            <img class="h-full rounded-lg " src="./images/coxBazar.jpg" alt="">
+          </div>
+          <div class="gap-2">
+            <h4 class="text-2xl font-bold">Khulna</h4>
+            <p class="mb-7">Cost: <span>500</span> $</p>
+            <button class="add-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card forr -->
+        <div class="flex gap-4 p-5 shadow-md hover:shadow-lime-100 hover:shadow-lg">
+          <div class="w-36">
+            <img class="h-full rounded-lg " src="./images/shundar-ban.jpg" alt="">
+          </div>
+          <div class="gap-2">
+            <h4 class="text-2xl font-bold">Cox Bazar</h4>
+            <p class="mb-7">Cost: <span>500</span> $</p>
+            <button class="add-btn btn">Add to cart</button>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- total cart section -->
+      <div class="p-4 shadow">
+        <div>
+          <h4 class="text-2xl font-bold">Cart</h4>
+          <hr> <br>
+
+          <div class="border border-green-400">
+            <ul 
+            id="selected-place-container"
+             class="flex flex-col">
+
+            </ul>
+          </div>
+          <br>
+          <hr>
+          <p class="text-xl font-bold">Total Cost: <span id="total-cost" class="text-blue-700">0</span></p>
+        </div>
+        <div class="space-x-3 space-y-3.5">
+          <button class="btn">Buss +100</button>
+          <button class="btn">Train -200</button>
+          <button class="btn">Flihgt +500</button>
+        </div>
+
+        <div>
+          <h4 class="text-xl font-bold">Grand total: <span>0</span> $</h4>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+
+</html>
